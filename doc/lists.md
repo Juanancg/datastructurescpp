@@ -16,4 +16,4 @@ Fundamental operations: pop and push (instert and delete).
 Only the top element is accesible.
 
 ## Queue 
-Opposite to stacks, it follows FIFO (First in, First out). 
+Opposite to stacks, it follows FIFO (First in, First out). Operations Enqueue and dequeue (insert and get).
