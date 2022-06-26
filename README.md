@@ -13,3 +13,4 @@ We should differenciate data structures(DS) from abstract data types (ADT). ADT 
 | Vehicle | Car<br>Airplane<br>Bicycle |
 
 
+[Lists, Stacks and Queues](doc/lists.md)

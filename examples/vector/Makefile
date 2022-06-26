@@ -18,5 +18,8 @@ run: clean all
 $(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) $^ -o $@ $(LIBRARIES)
 
+$(BIN):
+	mkdir $@
+
 clean:
 	-rm $(BIN)/*
