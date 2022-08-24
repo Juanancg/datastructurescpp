@@ -14,3 +14,11 @@ We should differenciate data structures(DS) from abstract data types (ADT). ADT 
 
 
 [Lists, Stacks and Queues](doc/lists.md)
+
+## Examples
+
+To run the examples, each directory has a bash.sh to help to compile, build and run the executable:
+```sh
+source bash.sh
+make ; run
+```
