@@ -14,6 +14,7 @@ void printPlayers(std::vector<int> players) {
 int main(int argc, char **argv) {
     std::cout << "Josephus problem" << std::endl;
 
+    // Change here how many passes and players
     int Mpasses = 4;
     int Npeople = 123;
 

@@ -6,20 +6,20 @@ SRC     := src
 INCLUDE := include
 
 LIBRARIES   :=
-EXECUTABLE  := main
+EXECUTABLE  := $(BIN)/main
+CODE_SRC  := $(wildcard src/*.cpp)
 
+.PHONY: all executable clean fclean
 
-all: $(BIN)/$(EXECUTABLE)
+all: executable
 
-run: clean all
-	clear
-	./$(BIN)/$(EXECUTABLE)
+executable : $(EXECUTABLE)
 
-$(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
+$(EXECUTABLE): $(CODE_SRC) | $(BIN)
 	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) $^ -o $@ $(LIBRARIES)
 
 $(BIN):
 	mkdir $@
 
 clean:
-	-rm $(BIN)/*
+	@$(RM) -rv $(BIN) 
